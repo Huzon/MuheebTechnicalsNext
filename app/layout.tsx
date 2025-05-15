@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import {  poppins } from "@/app/ui/font";
+import MobileMenu from "@/app/ui/mobileMenu"; // Adjust path as needed
+
 
 
 
@@ -18,13 +20,19 @@ export default function RootLayout({
     <html lang="en">
       <head>
       </head>
+      
       <body
-        className={`${poppins.className} antialiased`}
-      >
+        className={`${poppins.className} antialiased`} >
+            <nav className="p-4 fixed top-0 z-20 w-full flex justify-between items-center shadow-sm">
+          {/* LOGO */}
+          <div className="text-2xl font-bold antialiased">
+            MUHEEB LOGO
+          </div>
 
-        {/* <div className="fixed top-0 h-[50px] bg-red-500 w-screen">
+          {/* Navigation Button */}
+            <MobileMenu />
           
-        </div> */}
+       </nav>
 
         {children}
       </body>
