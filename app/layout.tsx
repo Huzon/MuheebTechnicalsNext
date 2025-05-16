@@ -20,7 +20,6 @@ export default function RootLayout({
     <html lang="en">
       <head>
       </head>
-      
       <body
         className={`${poppins.className} antialiased`} >
             <nav className="p-4 fixed top-0 z-20 w-full flex justify-between items-center shadow-sm">
@@ -31,7 +30,6 @@ export default function RootLayout({
 
           {/* Navigation Button */}
             <MobileMenu />
-          
        </nav>
 
         {children}

@@ -1,7 +1,6 @@
 'use client';
 import { useState } from 'react';
-import { FiMenu, FiX, FiPhone, FiMessageSquare } from 'react-icons/fi';
-import { FaWhatsapp } from 'react-icons/fa';
+import { FiMenu, FiX } from 'react-icons/fi';
 
 export default function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false);
